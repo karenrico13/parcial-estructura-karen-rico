@@ -16,14 +16,18 @@ public class HistorialAcademico {
 
     /** Promedio del estudiante. */
     public double promedio() {
-        // TODO: implementar
-        return 0;
+        if (estudiante == null) {
+            return 0.0;
+        }
+        return estudiante.promedio();
     }
 
     /** Cantidad de cursos inscritos. */
     public int cantidadCursos() {
-        // TODO: implementar
-        return 0;
+        if (estudiante == null || estudiante.getInscritos() == null) {
+            return 0;
+        }
+        return estudiante.getInscritos().size();
     }
 
     public Estudiante getEstudiante() { return estudiante; }
