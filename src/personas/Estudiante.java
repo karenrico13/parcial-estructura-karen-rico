@@ -52,8 +52,12 @@ public class Estudiante {
         }
     }
 
-    public String getNombre() { return nombre; }
-    public int[] getNotas() { return notas; }
-    public int getContadorNotas() { return contadorNotas; }
-    public ArrayList<Curso> getInscritos() { return inscritos; }
+    public String getNombre() {
+        return nombre; }
+    public int[] getNotas() {
+        return notas; }
+    public int getContadorNotas() {
+        return contadorNotas; }
+    public ArrayList<Curso> getInscritos() {
+        return inscritos; }
 }
